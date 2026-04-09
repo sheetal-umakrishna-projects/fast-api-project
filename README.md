@@ -94,42 +94,58 @@ app/
 ├── users.py         # User authentication and management
 frontend.py          # Streamlit frontend for interacting with API
 
-Getting Started
+```
+---
+
+## Getting Started
 
 Follow these steps to set up and run the project locally:
 
-1. Clone the repository
+### 1. Clone the repository
+```bash
 git clone <repository-url>
 cd <repository-folder>
-2. Install dependencies
+```
+
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
-3. Set up environment variables
+```
+
+### 3. Set up environment variables
 
 Create a .env file in the root folder:
-
+```bash
 IMAGEKIT_PRIVATE_KEY=<your_imagekit_private_key>
 IMAGEKIT_PUBLIC_KEY=<your_imagekit_public_key>
 IMAGEKIT_URL=<your_imagekit_url_endpoint>
+```
 
-4. Run the FastAPI backend
+### 4. Run the FastAPI backend
+```bash
 uvicorn app.app:app --reload
+```
 
-5. Run the Streamlit frontend
+### 5. Run the Streamlit frontend
+```bash
 streamlit run frontend.py
+```
 
-Usage
-Open the Streamlit frontend: http://localhost:8501
-Register or login with your email and password
-Upload images/videos with captions on the Upload page
-View all posts on the Feed page
-Delete posts you own using the delete button
+## Usage
+- Open the Streamlit frontend: http://localhost:8501
+- Register or login with your email and password
+- Upload images/videos with captions on the Upload page
+- View all posts on the Feed page
+- Delete posts you own using the delete button
 
-Future Improvements (FastAPI-focused)
-Add pagination and filtering to feed API
-Implement likes, comments, and reactions using REST endpoints
-Enable real-time updates with WebSockets or Server-Sent Events (SSE)
-Add cloud database support (PostgreSQL/MySQL) for production
-Enhance media validation and transformations in FastAPI
-Implement rate limiting and improved security for endpoints
-Add API documentation improvements (Swagger UI and OpenAPI enhancements)
-Optional: Implement admin dashboard for post management
+## Future Improvements (FastAPI-focused)
+- Add pagination and filtering to feed API
+- Implement likes, comments, and reactions using REST endpoints
+- Enable real-time updates with WebSockets or Server-Sent Events (SSE)
+- Add cloud database support (PostgreSQL/MySQL) for production
+- Enhance media validation and transformations in FastAPI
+- Implement rate limiting and improved security for endpoints
+- Add API documentation improvements (Swagger UI and OpenAPI enhancements)
+- Optional: Implement admin dashboard for post management
+
+---
